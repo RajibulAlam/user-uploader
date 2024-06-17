@@ -1,21 +1,21 @@
-name,email
-Harry Potter,harry.potter@example.com
-Hermione Granger,hermione.granger@example.com
-Ron Weasley,ron.weasley@example.com
-Albus Dumbledore,albus.dumbledore@example.com
-Severus Snape,severus.snape@example.com
-Rubeus Hagrid,rubeus.hagrid@example.com
-Draco Malfoy,draco.malfoy@example.com
-Ginny Weasley,ginny.weasley@example.com
-Fred Weasley,fred.weasley@example.com
-George Weasley,george.weasley@example.com
-Luna Lovegood,luna.lovegood@example.com
-Neville Longbottom,neville.longbottom@example.com
-Sirius Black,sirius.black@example.com
-Remus Lupin,remus.lupin@example.com
-Minerva McGonagall,minerva.mcgonagall@example.com
-Bellatrix Lestrange,bellatrix.lestrange@example.com
-Voldemort,voldemort@example.com
-Dobby,dobby@example.com
-Cho Chang,cho.chang@example.com
-Cedric Diggory,cedric.diggory@example.com
+firstName,lastName,email,age,userType
+Harry,Potter,harry.potter@example.com,20,User
+Hermione,Granger,hermione.granger@example.com,20,User
+Ron,Weasley,ron.weasley@example.com,20,User
+Albus,Dumbledore,albus.dumbledore@example.com,150,Admin
+Severus,Snape,severus.snape@example.com,45,Admin
+Rubeus,Hagrid,rubeus.hagrid@example.com,60,User
+Draco,Malfoy,draco.malfoy@example.com,20,User
+Ginny,Weasley,ginny.weasley@example.com,19,User
+Fred,Weasley,fred.weasley@example.com,21,User
+George,Weasley,george.weasley@example.com,21,User
+Luna,Lovegood,luna.lovegood@example.com,20,User
+Neville,Longbottom,neville.longbottom@example.com,20,User
+Sirius,Black,sirius.black@example.com,40,User
+Remus,Lupin,remus.lupin@example.com,40,User
+Minerva,McGonagall,minerva.mcgonagall@example.com,70,Admin
+Bellatrix,Lestrange,bellatrix.lestrange@example.com,47,User
+Tom,Riddle,voldemort@example.com,71,Admin
+Cho,Chang,cho.chang@example.com,20,User
+Cedric,Diggory,cedric.diggory@example.com,20,User
+Dobby,,dobby@example.com,102,User

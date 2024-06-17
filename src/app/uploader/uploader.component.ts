@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { UserUploadService } from '../user-upload.service';
-import {MatTableDataSource, MatTableModule} from '@angular/material/table';
-import { FormBuilder, FormGroup, Validators, AbstractControl, ReactiveFormsModule } from '@angular/forms';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
+import { UserDTO } from '../dto/UserDTO';
 
 @Component({
   selector: 'app-user-upload',
@@ -15,8 +16,8 @@ import { CommonModule } from '@angular/common';
   imports: [MatButtonModule, MatTableModule, CommonModule, ReactiveFormsModule]
 })
 export class UploaderComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'email'];
-  dataSource = new MatTableDataSource<any>();
+  displayedColumns: string[] = ['firstName', 'lastName', 'email', 'age', 'userType'];
+  dataSource = new MatTableDataSource<UserDTO>();
   fileForm: FormGroup;
   fileError: string | null = null;
 
@@ -41,7 +42,7 @@ export class UploaderComponent implements OnInit {
         this.fileForm.controls['file'].setValue(file); // Set the form control value if valid
         this.fileError = null; // Clear any previous file error
 
-        this.userUploadService.uploadFile(file).subscribe(
+        this.userUploadService.uploadFile(file,'Default').subscribe(
           () => {
             this.loadUsers();
           },
